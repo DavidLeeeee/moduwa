@@ -1,5 +1,6 @@
 import PageContainer from "@/components/global/globalContainer";
 import GlobalStyle from "@/components/global/globalMargin";
+
 import FeedElement from "../components/pageComponent/feed/feedelement";
 import FeedTop from "../components/pageComponent/feed/feedtop";
 
@@ -12,7 +13,7 @@ function FeedPage() {
       <PageContainer>
         <FeedTop />
 
-        <FeedElement d={"d"} />
+        <FeedElement />
       </PageContainer>
     </>
   );
