@@ -1,8 +1,8 @@
 import PageContainer from "@/components/global/globalContainer";
 import GlobalStyle from "@/components/global/globalMargin";
 
-import FeedElement from "../components/pageComponent/home/feed/feedelement";
-import FeedTop from "../components/pageComponent/home/feed/feedtop";
+import FeedElement from "../components/pageComponent/feed/feedelement";
+import FeedTop from "../components/pageComponent/feed/feedtop";
 
 // 데이터 가져옴 -> map으로 FeedElement에 props.
 
