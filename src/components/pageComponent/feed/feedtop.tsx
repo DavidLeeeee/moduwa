@@ -16,13 +16,32 @@ const FeedTopbar = styled.div`
     background-color: pink;
 `;
 
+const Button = styled.button`
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+`;
+
+const SubscribeButton = styled(Button)`
+    // 구독 버튼에 특화된 스타일 (필요에 따라 추가)
+`;
+
+const SellerButton = styled(Button)`
+    // 모두의판매자 버튼에 특화된 스타일 (필요에 따라 추가)
+`;
+
 function FeedTop() {
   return (
     <>
         <FeedTopContainer>
             <FeedTopbar>
-                <p>구독</p>
-                <p>모두의 판매자</p>
+                <SubscribeButton>구독</SubscribeButton>
+                <SellerButton>모두의판매자</SellerButton>
             </FeedTopbar>
         </FeedTopContainer>
     </>

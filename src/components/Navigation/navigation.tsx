@@ -21,7 +21,7 @@ const NavigationContainer = styled.nav`
     height: 100vh;
     width: 200px;
   }
-  @media (min-width: 768px) and (max-width: 1149px) {
+  @media (min-width: 769px) and (max-width: 1149px) {
     padding-top: 100px;
     justify-content: flex-start;
     left: 0;
