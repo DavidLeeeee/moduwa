@@ -3,6 +3,7 @@ import React from "react";
 import Navigation from "@/components/Navigation/navigation";
 import Header from "@/components/Navigation/header";
 import styled from "styled-components";
+import { useRouter } from "next/router"; //현재 라우팅을 알기 위한 변수
 import { AppProps } from "next/app"; //타입 명시적 정의
 
 const Layout = styled.div`
@@ -18,11 +19,14 @@ const MainContent = styled.div`
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const currentPage = router.pathname; // 현재 페이지 경로
+
   return (
     <Layout>
       <Navigation />
       <MainContent>
-        <Header />
+        <Header currentPage={currentPage} />
         <Component {...pageProps} />
       </MainContent>
     </Layout>
