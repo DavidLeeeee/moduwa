@@ -30,7 +30,7 @@
     "src/pages/profile.tsx",
     "src/pages/index.tsx",
     "src/pages/feed.tsx",
-    "src/pages/chat.tsx"
+    "src/components/pageComponent/feed/chat.tsx"
   ],
   "exclude": ["node_modules"]
 }

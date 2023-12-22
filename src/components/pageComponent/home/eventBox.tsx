@@ -43,7 +43,7 @@ const EventImage = styled.img`
   object-fit: cover; // 이미지 비율 유지
 `;
 //이벤트가게 이름
-const EventName = styled.p`
+const EventName = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -55,7 +55,7 @@ const EventName = styled.p`
   margin: 5px 0; // 여백 조정
 `;
 //거리(m/km)
-const EventLocation = styled.span`
+const EventLocation = styled.div`
   font-weight: normal;
   font-size: 0.8em;
   font-weight: 500;
@@ -63,15 +63,15 @@ const EventLocation = styled.span`
   margin-left: 0px; // 이름과 위치 사이의 간격
 `;
 
-const EventDate = styled.p`
+const EventDate = styled.div`
   color: rgb(20, 20, 20);
   font-size: 0.9em;
 `;
-const EventTime = styled.p`
+const EventTime = styled.div`
   color: rgb(20, 20, 20);
   font-size: 1em;
 `;
-const Deadline = styled.p`
+const Deadline = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end; // 컨텐츠를 공간에 균등하게 분배
@@ -79,14 +79,14 @@ const Deadline = styled.p`
   width: 60px;
   color: rgb(200, 15, 15);
 `;
-const PromptText = styled.span`
+const PromptText = styled.div`
   font-size: 0.8em; // 더 작은 글씨 크기
 `;
-const DeadlineTime = styled.span`
+const DeadlineTime = styled.div`
   font-size: 1.2em; // 더 큰 글씨 크기
 `;
 
-const PickRoute = styled.p`
+const PickRoute = styled.div`
   display: flex;
   flex-direction: column; // 세로 방향 정렬
   align-items: center; // 가로축 중앙 정렬
