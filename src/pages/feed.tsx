@@ -1,13 +1,18 @@
 import PageContainer from "@/components/global/globalContainer";
 import GlobalStyle from "@/components/global/globalMargin";
+import FeedElement from "./feedelement";
+import FeedTop from "./feedtop";
+
+// 데이터 가져옴 -> map으로 FeedElement에 props.
 
 function FeedPage() {
   return (
     <>
       <GlobalStyle />
       <PageContainer>
-        <h1>피드 페이지</h1>
-        {/* 여기에 추가 컨텐츠 및 컴포넌트 */}
+        <FeedTop />
+
+        <FeedElement d={"d"}/>
       </PageContainer>
     </>
   );
