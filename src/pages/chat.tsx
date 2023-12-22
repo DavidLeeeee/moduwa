@@ -1,6 +1,5 @@
 import PageContainer from "@/components/global/globalContainer";
 import GlobalStyle from "@/components/global/globalMargin";
-import Navigation from "@/components/Navigation/navigation";
 
 function ChatPage() {
   return (
