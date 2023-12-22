@@ -12,7 +12,6 @@ function FeedPage() {
       <GlobalStyle />
       <PageContainer>
         <FeedTop />
-
         <FeedElement />
       </PageContainer>
     </>

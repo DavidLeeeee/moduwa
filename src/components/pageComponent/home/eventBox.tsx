@@ -5,13 +5,16 @@ const EventContainer = styled.div`
   flex-direction: column;
   background-color: rgb(120, 250, 255);
   width: 95%;
-  max-width: 420px;
+  max-width: 400px;
   height: 120px;
   margin: 0 auto; // 가운데 정렬
   padding: 0px; // 패딩 설정
-  margin-bottom: 20px;
+  margin-top: 20px;
   border: 1px solid #000000;
   font-size: 16px;
+  @media (max-width: 390px) {
+    font-size: 14px;
+  }
 `;
 
 const ColumnBox = styled.div`
@@ -47,12 +50,15 @@ const EventName = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: end;
-  width: 180px;
+  width: 210px;
   background-color: #ffffff;
   color: rgb(20, 20, 20);
   font-weight: 600;
   font-size: 1.2em;
   margin: 5px 0; // 여백 조정
+  @media (max-width: 410px) {
+    width: 170px;
+  }
 `;
 //거리(m/km)
 const EventLocation = styled.div`
@@ -104,6 +110,7 @@ const BottomEventBox = styled.div`
   width: 100%;
   height: 30px;
   background-color: rgb(240, 240, 240);
+  font-size: 14px;
 `;
 
 interface Event {

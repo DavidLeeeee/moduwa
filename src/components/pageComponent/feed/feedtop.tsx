@@ -4,6 +4,7 @@ const FeedTopContainer = styled.div`
   display: flex;
   justify-content: center; // 세로 중앙 정렬
   align-items: center; // 가로 중앙 정렬
+  font-size: 18px;
 `;
 
 const FeedTopbar = styled.div`
@@ -14,6 +15,11 @@ const FeedTopbar = styled.div`
   justify-content: space-between; // 세로 중앙 정렬
   align-items: center; // 가로 중앙 정렬
   background-color: pink;
+  font-size: 1.2em;
+`;
+
+const Feedword = styled.div`
+  font-size: 18px;
 `;
 
 function FeedTop() {
@@ -21,7 +27,7 @@ function FeedTop() {
     <>
       <FeedTopContainer>
         <FeedTopbar>
-          <p>구독</p>
+          <Feedword>구독</Feedword>
           <p>모두의 판매자</p>
         </FeedTopbar>
       </FeedTopContainer>

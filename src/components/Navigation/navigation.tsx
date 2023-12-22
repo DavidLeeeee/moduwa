@@ -10,10 +10,10 @@ const NavigationContainer = styled.nav`
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  border-right: 1px solid #dbdbdb;
   flex-direction: column;
   // 웹용 Drawer 스타일
   @media (min-width: 1150px) {
+    border-right: 1px solid #dbdbdb;
     padding-top: 100px;
     justify-content: flex-start;
     left: 0;
@@ -21,7 +21,8 @@ const NavigationContainer = styled.nav`
     height: 100vh;
     width: 200px;
   }
-  @media (min-width: 768px) and (max-width: 1149px) {
+  @media (min-width: 769px) and (max-width: 1149px) {
+    border-right: 1px solid #dbdbdb;
     padding-top: 100px;
     justify-content: flex-start;
     left: 0;
@@ -31,21 +32,23 @@ const NavigationContainer = styled.nav`
   }
   // 모바일용 Bottom-Tab 스타일
   @media (max-width: 768px) {
-    justify-content: space-around;
-    flex-direction: row;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 65px;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+
     border-top: 1px solid #dbdbdb;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
   }
 `;
 
 //네비게이션의 각각의 버튼 스타일을 정의한다
 const NavLink = styled.div`
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
   color: rgb(30, 30, 30); //아이콘색
@@ -53,12 +56,12 @@ const NavLink = styled.div`
   font-size: 14px;
   // 웹용 스타일
   @media (min-width: 1150px) {
-    width: 200px;
+    width: 195px;
     flex-direction: row;
     justify-content: flex-start;
     padding: 20px 30px;
     &:hover {
-      background-color: #f9f9f9;
+      background-color: #afafaf;
     }
     .nav-text {
       padding-left: 20px;
@@ -67,10 +70,10 @@ const NavLink = styled.div`
   @media (min-width: 768px) and (max-width: 1149px) {
     align-items: center;
     justify-content: center;
-    width: 80px;
+    width: 78px;
     padding: 20px 0;
     &:hover {
-      background-color: #f9f9f9;
+      background-color: #afafaf;
     }
     .nav-text {
       display: none; // 이 부분을 추가하여 텍스트 숨김
@@ -78,10 +81,15 @@ const NavLink = styled.div`
   }
   // 모바일용 스타일
   @media (max-width: 768px) {
-    flex: 1;
+    display: flex;
+    padding: 4px 20px;
     flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
     &:hover {
       background-color: #f0f0f0;
+    }
+    .nav-text {
     }
   }
   svg {
