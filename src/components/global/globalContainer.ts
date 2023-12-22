@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const PageContainer = styled.div`
   flex: 1;
-  background-color: rgb(250, 250, 255);
+  background-color: rgb(235, 255, 255);
   width: 100%;
   max-width: 880px; // 최대 너비 설정
   min-height: 100vh;
