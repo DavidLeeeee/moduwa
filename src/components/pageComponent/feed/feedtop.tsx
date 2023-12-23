@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 const FeedTopContainer = styled.div`
     display: flex;
-    justify-content: center; // 세로 중앙 정렬
-    align-items: center;     // 가로 중앙 정렬
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;  
+    margin: 0 auto; // 가운데 정렬
 `;
 
 const FeedTopbar = styled.div`
     display: flex;
-    width: 430px;
+    width: 100%;
     height: 60px;
     flex-direction: row;
     justify-content: space-between; // 세로 중앙 정렬
@@ -37,14 +39,12 @@ const SellerButton = styled(Button)`
 
 function FeedTop() {
   return (
-    <>
-        <FeedTopContainer>
-            <FeedTopbar>
-                <SubscribeButton>구독</SubscribeButton>
-                <SellerButton>모두의판매자</SellerButton>
-            </FeedTopbar>
-        </FeedTopContainer>
-    </>
+    <FeedTopContainer>
+        <FeedTopbar>
+            <SubscribeButton>구독</SubscribeButton>
+            <SellerButton>모두의판매자</SellerButton>
+        </FeedTopbar>
+    </FeedTopContainer>
   );
 }
 

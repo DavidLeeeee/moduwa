@@ -16,7 +16,7 @@
         "profilePicture": "./image/김밥.jpeg",
         "storeName": "행복한 돈까스",
         "distance": "1km",
-        "postedImage": "path/to/posted-image2.jpg",
+        "postedImage": "./image/김밥.jpeg",
         "likes": 40,
         "datePosted": "2023-12-19",
         "content": "신메뉴 출시",
